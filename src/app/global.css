@@ -1,0 +1,57 @@
+@page {
+  margin: 0mm;
+}
+
+@media screen {
+  body {
+    margin: auto;
+    width: 210mm;
+  }
+
+  .page-header,
+  .page-footer,
+  .page-header-space,
+  .page-footer-space {
+    display: none;
+  }
+}
+
+@media print {
+  thead {
+    display: table-header-group;
+  }
+  tfoot {
+    display: table-footer-group;
+  }
+
+  body {
+    margin: 0;
+    box-shadow: none !important;
+  }
+}
+
+.page-header,
+.page-header-space {
+  height: 100px;
+}
+
+.page-footer,
+.page-footer-space {
+  height: 50px;
+}
+
+.page-header,
+.page-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.page-header {
+  top: 0;
+}
+
+.page-footer {
+  bottom: 0;
+  margin-bottom: -5px;
+}

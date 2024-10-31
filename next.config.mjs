@@ -1,4 +1,11 @@
+// next.config.mjs
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    output: 'export', // Mengaktifkan static export
+    images: {
+      unoptimized: true, // Menonaktifkan optimisasi gambar
+    },
+  };
+  
+  export default nextConfig;
+  
